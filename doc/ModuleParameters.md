@@ -1,3 +1,3 @@
 |Name|Type|Description|
 |--- |---|---|
-|_token|string|Provides an unique name for your token|
+|_token|address|Provides an unique name for your token|

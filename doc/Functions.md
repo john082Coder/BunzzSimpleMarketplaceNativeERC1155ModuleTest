@@ -7,76 +7,19 @@ This function will be called by the owner if he wants to transfer the ownership 
 |--- |---|---|
 |newOwner|address|The address that will become the new owner of the contract.|
 
+## renounceOwnership
+This function will be called by the owner if he wants to drop the ownership of the contract
 
-## safeTransferFrom
-Safely transfers the ownership of a given token ID
+No arguments
 
-|Name|Type|Description|Example|Default|
-|--- |---|---|---|---|
-|from|address|The token sender||N/A|
-|to|address|The token receiver||N/A|
-|tokenId|uint256|The id of the token that will be sent||N/A|
-|_data|bytes|Optional data field||N/A|
-
-## safeTransferFrom
-Safely transfers the ownership of a given token ID
+## buy
+This fuunction will be called by the buyers to purchase the NFT
 
 |Name|Type|Description|
 |--- |---|---|
-|from|address|The address of the token sender|
-|to|address|The id of the token that will be receiver|
-|tokenId|uint256|The id of the token that will be sents|
+|listingId|uint256|The listing id of the token which you want to buy|
+|amount|uint256|The amount which you want to purchase|
 
-## approve
-Gives an certain address permision to move tokens for the token owner
-
-|Name|Type|Description|
-|--- |---|---|
-|to|address|Account to approve to spend caller balance|
-|tokenId|uint256|Token id that will be approved to be user by other account|
-
-
-## setApprovalForAll
-
-Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf.
-
-|Name|Type|Description|
-|--- |---|---|
-|operator|address|The account that will be the balance operator|
-|approved|bool|Approval status|
-
-
-## mint
-Can only be called by the contract owner. Needs to provide the address that will receive the NFT. Needs to provide a token ID for metadata
-
-|Name|Type|Description|
-|--- |---|---|
-|to|address|The tokens receiver|
-|_tokenId|uint256|New token id that will be minted|
-
-## revokeRole
-Revokes role from account
-
-|Name|Type|Description|
-|--- |---|---|
-|role|bytes32|The role id|
-|account|address|The account that will be rovoked from role|
-
-## renounceRole
-Renounce role from account
-
-|Name|Type|Description|
-|--- |---|---|
-|role|bytes32|The role id|
-|account|address|The account that will renounce the role|
-
-## grantRole
-Grants a role to account
-
-|Name|Type|Description|
-|--- |---|---|
-|role|bytes32|The role id|
-|account|address|The account that will be granted the role|
 
 
 # READ(main)

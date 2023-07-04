@@ -1,13 +1,11 @@
 # WRITE(main)
 
-## transferFrom
-Transfer a particular tokenId from the token owner to an certai address if the caller have the permision to transfer it
+## transferOwnerShip
+This function will be called by the owner if he wants to transfer the ownership of the contract to another address
 
-|Name|Type|Description|Example|Default|
-|--- |---|---|---|---|
-|from|address|The token sender||N/A|
-|to|address|The token receiver||N/A|
-|tokenId|uint256|The id of the token that will be transfered||N/A|
+|Name|Type|Description|
+|--- |---|---|
+|newOwner|address|The address that will become the new owner of the contract.|
 
 
 ## safeTransferFrom

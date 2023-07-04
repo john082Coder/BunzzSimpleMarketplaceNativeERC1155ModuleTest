@@ -13,12 +13,27 @@ This function will be called by the owner if he wants to drop the ownership of t
 No arguments
 
 ## buy
-This fuunction will be called by the buyers to purchase the NFT
+This function will be called by the buyers to purchase the NFT
 
 |Name|Type|Description|
 |--- |---|---|
 |listingId|uint256|The listing id of the token which you want to buy|
 |amount|uint256|The amount which you want to purchase|
+
+## cancelList
+This functions is for cancelling a listing.
+|Name|Type|Description|
+|--- |---|---|
+|tokenId|uint256|The id of the token which you want to remove|
+
+## list
+This function is for listing a token for sale
+
+|Name|Type|Description|
+|--- |---|---|
+|tokenId|uint256|The token id which you want to list for sale|
+|amount|uint256|The amount which you want to list|
+|price|uint256|The price which you want to list for sale|
 
 
 

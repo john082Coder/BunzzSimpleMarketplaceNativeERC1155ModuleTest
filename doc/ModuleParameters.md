@@ -1,3 +1,3 @@
-|Name|Type|Description|
+|Name|Type|Description|Example|Default|
 |--- |---|---|---|---|
-|_token|address|The address of ERC1155 token|
+|_token|string|Provides an unique name for your token|[]|N/A|

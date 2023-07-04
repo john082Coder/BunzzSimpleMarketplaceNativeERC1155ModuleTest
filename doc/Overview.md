@@ -1,24 +1,26 @@
 ## About
 > one line description ← What issue does this module solve?
 
- ERC721MintRole module is a standard interface for non-fungible tokens, also known as deeds. This contract extends the ERC721Enumerable and AccessControl contracts from OpenZeppelin to create a custom ERC721 token with minting functionality.
+The MarketplaceNativeERC1155 contract is an on-chain marketplace for trading ERC1155 tokens using the native currency (e.g., Ether).
 
 
 ## Features
 
-The contract allows users with the MINTER_ROLE to mint new tokens and set token URIs.
+It allows users to list their tokens for sale, specifying the price and quantity, and enables buyers to purchase tokens by sending the required amount of the native currency.
 
-The contract also supports querying token URIs and provides a base URI for token metadata.
+The contract uses the OpenZeppelin library for ERC1155 token interactions and inherits from the Ownable contract for access control.
+
+The marketplace tracks active listings and provides functions to list, buy, and cancel listings.
 
 ## Use case
 
-ERC721MintRole tokens are perfect for physical assets such as land, real estate, art trading, loan financing and other financial products, agricultural land management, identification, data storing and so on.
+This module is very useful for creating decentralized marketplace for buying and selling ERC1155 tokens with native currency.
 
 ## Sample dApp
 - github repo URL
-    https://github.com/john082Coder/BunzzERC721CustomURIMintableModuleTest
+    https://github.com/john082Coder/BunzzSimpleMarketplaceNativeERC1155ModuleTest
 - simple dapp URL
-    https://bunzz-erc-721-custom-uri-mintable-module-test.vercel.app/
+    https://bunzz-simple-marketplace-native-erc-1155-module-test.vercel.app/
 
 
 ---

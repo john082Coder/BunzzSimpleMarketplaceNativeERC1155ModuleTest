@@ -18,6 +18,7 @@ const Creator = () => {
 
     const [buyTokenId, setBuyTokenId] = useState(0);
     const [buyAmount, setBuyAmount] = useState(0);
+    const [buyETHAmount, setBuyETHAmount] = useState(0);
 
     const [cancelTokenId, setCancelTokenId] = useState(0);
 
@@ -84,6 +85,8 @@ const Creator = () => {
                             <Form.Control type="email" placeholder="Enter token id" value={buyTokenId} onChange={(val) => setBuyTokenId(val.target.value)} />
                             <Form.Label>Input Token Amount</Form.Label>
                             <Form.Control type="email" placeholder="Enter token amount" value={buyAmount} onChange={(val) => setBuyAmount(val.target.value)} />
+                            <Form.Label>Input ETH Amount</Form.Label>
+                            <Form.Control type="email" placeholder="Enter ETH amount" value={buyETHAmount} onChange={(val) => setBuyETHAmount(val.target.value)} />
                         </Form.Group>
 
                         {!pendingBuy ?
@@ -96,6 +99,7 @@ const Creator = () => {
                                         MarketplaceNativeERC1155Contract,
                                         buyTokenId,
                                         buyAmount,
+                                        buyETHAmount,
                                         account,
                                     );
                                 

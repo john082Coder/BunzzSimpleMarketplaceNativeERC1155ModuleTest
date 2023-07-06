@@ -24,15 +24,15 @@ export const setErc20ContractAddress = (bunzz, address) => {
 
 
 export const list = async (MarketplaceNativeERC1155Contract, tokenId, amount, price, account) => {
-  return MarketplaceNativeERC1155Contract.methods.list(tokenId, amount, price).send({ from: account})
+  return MarketplaceNativeERC1155Contract.methods.list(tokenId, amount, new BigNumber(price).times(new BigNumber(10).pow(18)).toString()).send({ from: account})
   .on('transactionHash', (tx) => {
     console.log(tx)
     return tx.transactionHash
   }); 
 }
 
-export const buy = async (MarketplaceNativeERC1155Contract, listingId, amount, account) => {
-  return MarketplaceNativeERC1155Contract.methods.buy(listingId, amount).send({ from: account})
+export const buy = async (MarketplaceNativeERC1155Contract, listingId, amount, ethAmount,  account) => {
+  return MarketplaceNativeERC1155Contract.methods.buy(listingId, amount).send({ from: account, value:new BigNumber(ethAmount).times(new BigNumber(10).pow(18)).toString()})
   .on('transactionHash', (tx) => {
     console.log(tx)
     return tx.transactionHash

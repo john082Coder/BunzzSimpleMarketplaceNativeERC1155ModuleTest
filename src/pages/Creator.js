@@ -41,7 +41,7 @@ const Creator = () => {
                             <Form.Label>Input Amount</Form.Label>
                             <Form.Control type="email" placeholder="Enter Id" value={listAmount} onChange={(val) => setListAmount(val.target.value)} />
                             <Form.Label>Input Price</Form.Label>
-                            <Form.Control type="email" placeholder="Enter price" value={listAmount} onChange={(val) => setListPrice(val.target.value)} />
+                            <Form.Control type="email" placeholder="Enter price" value={listPrice} onChange={(val) => setListPrice(val.target.value)} />
                         </Form.Group>
                             {!pendingList ?
                                 <Button className="mx-3 mt-2" variant="dark" onClick={async () => {

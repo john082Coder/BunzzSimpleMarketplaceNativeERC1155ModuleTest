@@ -22,6 +22,7 @@ This function will be called by the buyers to purchase the NFT
 
 ## cancelList
 This functions is for cancelling a listing.
+
 |Name|Type|Description|
 |--- |---|---|
 |tokenId|uint256|The id of the token which you want to remove|
